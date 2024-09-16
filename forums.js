@@ -148,6 +148,7 @@ function parseNewPosts(data) {
 }
 
 function parseQuotes(newPosts) {
+    return 0; 
     // start from top
     newPosts.each((key, jpost) => {
         let post = new Post(jpost);
@@ -180,7 +181,8 @@ function parseUniversalTags() {
             img.attr("src", `https://sci-oly.eggs.workers.dev/?u=${imgSrc}`);
         }
     });
-
+    
+    return 0;
     // hide tags
     let tags = $("dl.codebox");
     tags.each((key, rawTag) => {
